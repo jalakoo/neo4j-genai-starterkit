@@ -20,7 +20,9 @@ def get_neo4j_response(query: str):
 
     try:
         driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD))
-        embedder = OpenAIEmbeddings(model="text-embedding-3-large")
+        embedder = OpenAIEmbeddings(
+            model="text-embedding-3-large", api_key=OPENAI_API_KEY, dimensions=1536
+        )
 
         create_vector_index(
             driver,
