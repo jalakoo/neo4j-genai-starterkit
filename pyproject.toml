@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "neo4j-genai-starterkit"
+version = "0.1.0"
+description = ""
+authors = ["jalakoo <jalakoo@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+neo4j-genai = "^0.2.0"
+fastapi = "^0.111.0"
+uvicorn = "^0.30.1"
+langchain-openai = "^0.1.8"
+neo4j = "^5.21.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
